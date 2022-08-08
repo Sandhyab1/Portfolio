@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -17,23 +17,28 @@
 <body>
   <div class="home section" id="home">
     <div class="row container-fluid">
-        <div class="intro col-lg-6 " >
+        <div class="intro col-lg-6 " >   
           <p class="hello">HELLO , I'm</p>
           <span>SANDHYA B</span>
-          <h6>ASpiring Web Developer</h6>
-        </div>  
+          <h6>Aspiring Web Developer</h6>
+        </div> 
         <div class="shapes-eff col-lg-6">
           <div class=" shapes shape-1"></div>
           <div class=" shapes shape-2"></div>
           <div class="intro-image ">
             <img src="image.jpg">
+            <div class="blur"></div>
+            <div class="blur-1"></div>
+
         </div>
-       </div>
+       </div>      
           <div class="btns">
-          <button class="button btn btn-outline-dark " type="button"  >Know me more</button>
-          <button class="button btn btn-outline-dark" type="button" >Portfolio</button>
-          <button class="button btn btn-outline-dark" type="button" >Contact me</button>
+         <button class="button btn btn-outline-dark " type="button"  > <a href="#about">Know me more</a></button>
+         <button class="button btn btn-outline-dark" type="button" ><a href="#portfolio">Portfolio</a></button>
+         <button class="button btn btn-outline-dark" type="button" > <a href="#contact-me">Contact me</a></button>
           </div>
+          <div class="blur-2"></div>
+          <div class="blur-3"></div>
         </div>
     </div>
  </div>   
@@ -47,17 +52,19 @@
             <div class="timeline-item">
               <span class="date"> 2020 - 2024</span>
               <h5>Bachelor of Technology - <span> University Visvesvaraiah College of Engineering</span></h5>
-              <p> I started my engineering journey at UVCE as an Information Science Engineer and Im currently studying in 2nd year.  </p>
+              <p> I'm currently in 2nd year, studing Information Science and Engineering in UVCE. I belong to 2020-2024 batch.  </p>
             </div>
+            <div class="blur-4"></div>
+            <div class="blur-5"></div>
             <div class="timeline-item">
               <span class="date"> 2018 - 2020</span>
               <h5> PUC- <span>Sri Chaitanya PU College </span></h5>
-              <p> I started my engineering journey at UVCE as an Information Science Engineer and Im currently studying in 2nd year.  </p>
+              <p> I completed my 11th and 12th in Chaitanya PU College with distinction. I'm was a PCMC student </p>
             </div>
             <div class="timeline-item">
               <span class="date"> 2018</span>
               <h5> SSLC- <span> Sri Jagadguru Renukha Charya Public School</span></h5>
-              <p> I started my engineering journey at UVCE as an Information Science Engineer and Im currently studying in 2nd year.  </p>
+              <p> I studied till 10th in SJR public school. I passed my 10th class with distinction  </p>
             </div>
           </div>
         </div>
@@ -90,9 +97,15 @@
             <h3>Social-Links</h3>
           </div>
           <div class="card-body">
-            <div class="img">
-              <img src="" alt="">
+            <div id="testimonials-1">
+            <div id="testimonial-carousel-1" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="social.jpeg" >
+                </div>
+              </div>
             </div>
+          </div>
               <div class="tech">
                 <div class="tech-items">HTML</div>
                 <div class="tech-items">CSS</div>
@@ -106,8 +119,23 @@
           <h3>Web Quest</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-2">
+            <div id="testimonial-carousel-2" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="webquest-1.jpeg" >
+                </div>
+                <div class="carousel-item active">
+                  <img class="image" src="webquest-2.jpeg" >
+              </div>
+              </div>
+              <a class="carousel-control-prev" href="#testimonial-carousel-5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" ></span>
+              </a>
+              <a class="carousel-control-next"  href="#testimonial-carousel-5" role="button"  data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+              </a>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -122,8 +150,14 @@
           <h3>Url Shortner</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-3">
+            <div id="testimonial-carousel-3" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="url-1.jpeg" >
+                </div>
+              </div>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -139,8 +173,14 @@
           <h3>Todo List</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-4">
+            <div id="testimonial-carousel-4" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="todo-1.jpeg" >
+                </div>
+              </div>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -150,14 +190,30 @@
         </div>
       </div>
     </div>
+    <div class="blur-6"></div>
       <div class="col-lg-4">
       <div class="card">
         <div class="card-header">
           <h3>Chat-app</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-5">
+            <div id="testimonial-carousel-5" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="chat-1.jpeg" >
+                </div>
+                <div class="carousel-item ">
+                  <img class="image" src="chat-2.jpeg" >
+              </div>
+              </div>
+              <a class="carousel-control-prev" href="#testimonial-carousel-5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" ></span>
+              </a>
+              <a class="carousel-control-next"  href="#testimonial-carousel-5" role="button"  data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+              </a>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -173,8 +229,31 @@
           <h3>User Login</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-6">
+            <div id="testimonial-carousel-6" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="login-1.jpeg" >
+                </div>
+                <div class="carousel-item ">
+                  <img class="image" src="login-2.jpeg" >
+              </div>
+              <div class="carousel-item ">
+                <img class="image" src="login-3.jpeg" >
+            </div>
+            <div class="carousel-item ">
+              <img class="image" src="login-4.jpeg" >
+          </div>
+          <div class="carousel-item ">
+            <img class="image" src="login-5.jpeg" >
+        </div>
+        <a class="carousel-control-prev" role="button"  href="#testimonial-carousel-6" data-slide="prev">
+          <span class="carousel-control-prev-icon" ></span>
+        </a>
+        <a class="carousel-control-next"  href="#testimonial-carousel-6" role="button"  data-slide="next">
+          <span class="carousel-control-next-icon" ></span>
+        </a>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -183,6 +262,7 @@
             </div>
         </div>
       </div>
+      </div>
     </div>
       <div class="col-lg-4">
         <div class="card">
@@ -190,8 +270,23 @@
           <h3>Quiz app</h3>
         </div>
         <div class="card-body">
-          <div class="img">
-            <img src="" alt="">
+          <div id="testimonials-7">
+            <div id="testimonial-carousel-7" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image" src="quiz-1.jpeg" >
+                </div>
+                <div class="carousel-item ">
+                  <img class="image" src="quiz-2.jpeg" >
+              </div>
+              </div>
+              <a class="carousel-control-prev"  href="#testimonial-carousel-7" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" ></span>
+              </a>
+              <a class="carousel-control-next"  href="#testimonial-carousel-7" `role="button"  data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+              </a>
+            </div>
           </div>
             <div class="tech">
               <div class="tech-items">HTML</div>
@@ -229,11 +324,12 @@
             <p>9986351788<br>
             7358245641</p>
           </div>
+          <div class="blur-7"></div>
           <div class="contact-items">
             <h4>Follow me</h4>
             <div class="social-links">
-              <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/_sandhya._.b/" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/Sandhyab1" target="_blank"><i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>

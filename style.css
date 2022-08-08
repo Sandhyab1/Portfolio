@@ -1,9 +1,43 @@
 body{
     overflow-x: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: inherit;
 }
 
 h4{
     font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-weight: 550;
+}
+
+h3{
+    font-family: 'Aclonica', sans-serif;
+    letter-spacing:0.23rem;
+    font-size: 2rem;
+}
+
+.card-header h3{
+    padding-top: .34rem;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 1.89rem;
+}
+
+span{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .section{
@@ -57,6 +91,102 @@ h4{
     }
 }
 
+.blur{
+    position:absolute;
+    background-color:rgb(240, 171, 240) ;
+    width:22rem;
+    height: 14rem;
+    border-radius: 50%;
+    filter:blur(72px);
+    z-index: -4;
+    top:-9%;
+    left:56%;
+}
+
+.blur-1{
+    position:absolute;
+    background-color:rgb(165, 174, 206) ;
+    width:22rem;
+    height: 14rem;
+    border-radius: 50%;
+    filter:blur(50px);
+    z-index: -5;
+    top:20%;
+    left:-16%;
+}
+
+.blur-3{
+    position:absolute;
+    background-color:rgb(24, 27, 37) ;
+    width:20rem;
+    height: 11rem;
+    border-radius: 30%;
+    filter:blur(100px);
+    z-index: -5;
+    top:45%;
+    right:-16%;
+}
+
+.blur-2{
+    position:absolute;
+    background-color:rgba(241, 241, 59, 0.959) ;
+    width:90rem;
+    height: 10rem;
+    border-radius: 75%;
+    filter:blur(140px);
+    z-index: -6;
+    top:70%;
+    left:-11%;
+}
+
+.blur-4{
+    position:absolute;
+    background-color:rgba(241, 129, 148, 0.959) ;
+    width:40rem;
+    height: 10rem;
+    border-radius: 15%;
+    filter:blur(140px);
+    z-index: -8;
+    top:30%;
+    left:-10%;
+}
+
+.blur-5{
+    position:absolute;
+    background-color:rgba(201, 133, 144, 0.959) ;
+    width:40rem;
+    height: 10rem;
+    border-radius: 15%;
+    filter:blur(140px);
+    z-index: -9;
+    top:30%;
+    right:-110%;
+}
+
+.blur-6{
+    position:absolute;
+    background-color:rgba(148, 207, 148, 0.959) ;
+    width:70rem;
+    height: 60rem;
+    border-radius: 15%;
+    filter:blur(140px);
+    z-index: -9;
+    top:270%;
+    right:10%;
+}
+
+.blur-7{
+    position:absolute;
+    background-color:rgba(253, 125, 21, 0.959) ;
+    width:80rem;
+    height: 10rem;
+    border-radius: 15%;
+    filter:blur(140px);
+    z-index: -10;
+    top:500%;
+    left:-0.5%;
+}
+
 .home{
     position: relative;
     margin: 0;
@@ -69,6 +199,20 @@ h4{
     padding-top: 10%;
 }
 
+.intro span{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 1400;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+ h6{
+   font-size: 1.3rem;
+   font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+
+}
 .hello{
     font-family: 'Raleway', sans-serif;
     font-size: medium;
@@ -132,6 +276,18 @@ img{
   
 }
 
+.timeline::after{
+
+    content: " ";
+    position: absolute;
+    width:2px;
+    height:80%;
+    background-color: blueviolet;
+    left:50vw;
+    top:0%
+
+}
+
 .about .timeline-item::before{
     content: '';
     position: absolute;
@@ -180,6 +336,7 @@ img{
    display:flex;
    flex-wrap: wrap;
    justify-content: center;
+   padding-top: 10px;
 }
 
 .tech .tech-items{
@@ -190,6 +347,15 @@ img{
 
 .tech .tech-items:last-child{
     border-right: 2px solid grey;
+}
+
+.card-body{
+    text-align: center;
+}
+
+#testimonials-1 ,#testimonials-2 ,#testimonials-3 ,#testimonials-4 ,#testimonials-5 ,#testimonials-6 ,#testimonials-7,.image{
+    border-radius: 0;
+    height:50%;
 }
 .input-area{
     padding-left:8rem;
@@ -234,6 +400,10 @@ img{
     padding-top: 1rem;
 }
 
+.contact-me{
+    padding-bottom: 3rem;
+}
+
 .contact-items .social-links a{
     display: inline-flex;
     align-items: center;
@@ -241,6 +411,7 @@ img{
     height: 35px;
     width: 35px;
     background-color: rgb(55, 44, 44);
+    color: white;
     border-radius: 50%;
     margin-right: 4%;
     font-size: 1.5rem;
@@ -248,10 +419,23 @@ img{
 
 .contact-items .social-links a:hover{
     color:black;
-    background-color: rgb(22, 114, 243);
+    background-color: rgb(180, 224, 19);
 }
 
-
+#to-top{
+    position:fixed;
+    bottom:22px;
+    right:18px;
+    font-size:30px;
+    color:#1232c2;
+    border-radius: 50%;
+    background-color: rgb(141, 135, 135);
+    height:50px;
+    width:50px;
+    line-height: 50px;
+    filter: opacity(0.5);
+    text-align: center;
+}
 
 
 
